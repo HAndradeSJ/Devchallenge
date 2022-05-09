@@ -1,0 +1,191 @@
+/* importação */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto&display=swap');
+
+/* variaveis */
+:root{
+    --color-1:#3f3d56;
+    --color-2:#ca0710;
+    --color-3:#f0dfcd;
+    --font-default:'Roboto', sans-serif;
+}
+/* default do site */
+*{
+    margin:0;
+    padding:0;
+    font-family:var(--font-default);
+}
+
+/* titulo */
+h1{
+    font-size:4rem;
+    margin-left:5%;
+    margin-top:4vh;
+    color:var(--color-2);
+    cursor: pointer;
+    transition:0.1s;
+}
+/* header do site */
+header{
+    display:flex;
+    justify-content:space-between;
+    margin:auto;
+}
+/* menu de navegacao */
+.navegacao ul{
+    display:flex;
+    margin-top:3vh;
+    margin-right:4.5vw;
+    position: relative;
+}
+.navegacao ul li{
+    list-style:none;
+    padding:6vh;
+}
+.navegacao li{
+    font-size:1.5rem;
+}
+.navegacao a{
+    text-decoration:none;
+}
+/* botaõ de cadastro */
+.navegacao button{
+    height:35px;
+    width:145px;
+    border-radius:10px;
+    font-weight:bold;
+    border:none;
+    margin-top:35px;
+    align-items:center;
+    color:white;
+    font-size:20px;
+    background-color:var(--color-2);
+    transition: 0.1 ;
+}
+/* hover de animação */
+.navegacao button:hover{
+    background-color: #f5010d;
+    font-size:40;
+    width:160px;
+    height:40px;
+}
+/* hover do meunu de navegação */
+
+
+/* hover da imagnes */
+h1:hover{
+    font-size:4.5rem-;
+}
+/* main do site */
+main{
+    display:flex;
+    justify-content:space-between;
+}
+/* foto principal da pagina */
+main img{
+    max-width:35vw;
+    margin-top:5vh;
+    margin-left:10vw;
+}
+/* conteudo de destaque */
+.destaque{
+    margin-top:20vh;
+    margin-right:8vw;
+}
+.destaque p{
+    font-size:1.25rem;
+    font-weight:bold;
+}
+.destaque h2{
+    color:var(--color-2);
+    font-size:66px;
+    margin-top:1vh;
+    margin-left:0.25vw;
+}
+/* botão de destaque */
+.destaque button{
+    background-color:var(--color-1);
+    font-weight:bold;
+    border:none;
+    border-radius:10px;
+    width:23vw;
+    height:7vh;
+    font-size:1.5rem;
+    margin-top:2vh;
+    margin-left:0vw;
+    color:white;
+}
+/* houver do main */
+.destaque button:hover{
+    background-color:var(--color-2);
+    width:24vw;
+    height:8vh;
+    font-size:1.6rem;
+}
+/* resposividade */
+@media (max-width:990px){
+    /* botaão do houver */
+    .navegacao button{
+        height:0px;
+        width:0px;
+    }
+    /* parte de cima do site */
+    header{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    h1{
+        position:center;
+        margin-left:0vw;
+        font-size:4rem; 
+    }
+    /* navegação do site */
+    .navegacao ul{
+        align-items:center;
+        position:center;   
+    }
+    .navegacao ul li{
+        font-size:1.20rem;
+        padding:0.25vw;
+        margin-left:10vw;   
+    }
+    /* main do site */
+    main{
+        flex-direction:column;
+        align-items:center;
+    }
+    /* imagens central do site */
+    .foto{
+        margin-top:2vh;
+        max-width:70vw;
+        margin-left:0vh;
+    }
+    /* conteudo destaque do site */
+    .destaque p{
+        text-align:center;
+        margin-top:-15vh;
+        margin-left:4.5vh;
+        font-size:1.0rem;
+    }
+    .destaque h2{
+        text-align:center;
+        font-size:2.55rem;
+        margin-left:5vw;
+    }
+    .destaque button{
+        margin-left:12vw;
+        width:65vw;
+        height:5vh;
+        font-size:1.0rem;
+    }
+    /* houver do site */
+    .destaque button:hover{
+        margin-left:12vw;
+        width:66vw;
+        height:6vh;
+        font-size:1.2rem;
+    }
+}
+
+
+

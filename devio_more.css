@@ -1,0 +1,140 @@
+/* importaçoes */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto&display=swap');
+
+/* variaveis */
+:root{
+    --color-1:#3f3d56;
+    --color-2:#ca0710;
+    --color-3:#f0dfcd;
+    --font-default:'Roboto', sans-serif;
+}
+/* default */
+*{
+    margin:0;
+    padding:0;
+    font-family:var(--font-default);
+}
+ /* a ul do site */
+.vantagens{
+    margin-left:13vw;
+    margin-top:-50vh;
+}
+.vantagens li{
+    font-size:1.5rem;
+    margin-top:1vw;   
+}
+/* imagens exmplo do site */
+img{
+    max-width:28rem;
+    margin-top:10vh;
+    margin-left:56vw;
+}
+/* input do site */
+.ajuda{
+    margin-left:11.5vw;
+    margin-top:10vh;
+}
+.ajuda p{
+    font-weight:bold;
+    font-size:1.25rem;
+    line-height:6vh;
+}
+/* input */
+.ajuda input{
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    width:16vw;
+    height:7vh;
+    background-color:rgba(207, 205, 205, 0.89);
+}
+.ajuda  input::placeholder{
+    color:black;
+}
+/* button do ajuda */
+.ajuda button{
+    border:none;
+    border-radius:10px;
+    color:white;
+    font-weight:bold;
+    width:15vw;
+    height:7vh;
+    font-size:1.1rem;
+    cursor:pointer;
+    margin-left:1vw;
+    background-color:var(--color-2);
+}
+/* houver do button */
+.ajuda button:hover{
+    width:17vw;
+    height:8vh;
+    background-color:var(--color-1);
+}
+/* resposividade em css */
+@media (max-width:990px){
+    /* default do site */
+    main{
+        display:flex;
+        flex-direction:column;
+    }
+    /* a imagens do site */
+    img{
+        max-width:50vw;
+        margin-left:35vw;
+        margin-top:3vh;
+        align-items:center;
+    }
+    /* ul do site */
+    .vantagens{
+        margin-top:4vh;
+        margin-left:30vw;
+    }
+    .vantagens li{
+        font-size:1.25rem;
+        line-height:6vh;
+    }
+    /* input */
+    .ajuda{
+        margin-top:4vh;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    .ajuda p{
+        margin-top:-1vh;
+        font-size:1.20rem;
+        text-align:center;
+        margin-left:3vw;
+    }
+    .ajuda input{
+        border:none;
+        margin-top:1.0h;
+        border-radius:10px;
+        cursor:pointer;
+        width:50vw;
+        height:7vh;
+        background-color:rgba(207, 205, 205, 0.89);
+    }
+    /* botaão */
+    .ajuda button{
+        border:none;
+        border-radius:10px;
+        color:white;
+        font-weight:bold;
+        width:50vw;
+        height:7vh;
+        font-size:1.0rem;
+        cursor:pointer;
+        margin-left:1vw;
+        margin-top:2vh;
+        background-color:var(--color-2);
+    }
+    /* houver do site */
+    .ajuda button:hover{
+        width:70vw;
+        height:8vh;
+        font-size:1rem;
+        background-color:var(--color-1)
+
+    }
+}
