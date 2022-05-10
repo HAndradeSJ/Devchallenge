@@ -207,7 +207,7 @@ i{
    .bola{
     background-color:var(--color-2);
     height:11vh;
-    width:20vw;
+    width:22vw;
     border-radius:500vw;
     margin-left:5vw;
     margin-top:4vh;
@@ -240,7 +240,7 @@ i{
     .bola-2{
         background-color:var(--color-2);
         height:11vh;
-        width:20vw;
+        width:22vw;
         border-radius:500vw;
         margin-left:5vw;
         margin-top:4vh;
@@ -303,6 +303,27 @@ i{
    }
    .redes-socias i{
        margin-left:-1vw;
+   }
+   /* hover dos elementos de responsividade */
+   .bola:hover{
+    height:15vh;
+    width:30vw;
+    border-radius:500vw;
+    margin-left:5vw;
+    margin-top:4vh;
+    transition:0.2s all;
+   }
+   .box-2:hover{
+    height:15vh;
+    width:30vw;
+    border-radius:500vw;
+    margin-left:5vw;
+    margin-top:4vh;
+    transition:0.2s all;
+   }
+   .box-1 h3:hover{
+       font-size:3.6;
+       color:var(--color-2);
    }
 
 }
